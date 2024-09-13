@@ -1,0 +1,23 @@
+import React from "react";
+import { Link, Route, Routes } from "react-router-dom";
+import Home from "../pages/Home.jsx";
+import Book from "../pages/Book.jsx";
+import Contact from "../pages/Contact.jsx";
+import Shop from "../pages/Shop.jsx";
+import About from "../pages/About.jsx";
+
+const Routing = () => {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/book" element={<Book />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
+  );
+};
+
+export default Routing;
