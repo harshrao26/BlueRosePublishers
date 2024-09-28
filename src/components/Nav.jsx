@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; 
-import { FiHome, FiBook, FiShoppingCart, FiMenu, FiX } from 'react-icons/fi'; 
+import { FiHome, FiMenu, FiX } from 'react-icons/fi'; 
 import { IoInformationCircleOutline } from "react-icons/io5";
-import { IoMdContacts } from "react-icons/io";
+import { RiCustomerService2Line, RiQuestionAnswerLine } from "react-icons/ri";
+import { FaProjectDiagram } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,90 +13,72 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-100 shadow-sm sticky top-0 z-50 ">
+    <nav className="bg-white shadow-sm md:px- sticky top-0 z-50">
       <div className="mx-auto px-2 sm:px-6 lg:px-8">
-        <div className="relative flex items-center justify-between h-16">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <div className="relative flex items-center justify-between h-20">
+          <div className="absolute inset-y-0  left-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-zinc-900 hover:text-white hover:bg-zinc-700 transition-all ease-in-out  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-zinc-900 hover:text-white hover:bg-zinc-700 transition-all ease-in-out focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <FiX className="block h-6 w-6" aria-hidden="true" />
               ) : (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
+                <FiMenu className="block h-6 w-6" aria-hidden="true" />
               )}
             </button>
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0">
-              <h1 className="text-zinc-800 flex items-center mt-1 text-2xl font-bold">BookStore</h1>
+              <img
+                src="https://propques.com/wp-content/uploads/2023/12/Untitled_design__2_-removebg-preview-e1702983011868-60x61.png"
+                alt="Logo"
+                className="h-13 w-13"
+              />
             </div>
-            <div className="hidden w-full sm:block sm:ml-6">
-              <div className="flex justify-end gap-4 ">
+            <div className="hidden sm:flex items-center w-full sm:ml-6">
+              <div className="flex justify-end gap-4 w-full">
                 <Link
                   to="/"
-                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white px-3 py-2 rounded-md text-md font-medium"
                 >
-                  <FiHome size={20} />Home 
+                  <FiHome size={20} /> Home
+                </Link>
+                <Link
+                  to="/service"
+                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                >
+                  <RiCustomerService2Line size={20} /> Service
                 </Link>
                 <Link
                   to="/about"
-                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white px-3 py-2 rounded-md text-md font-medium"
                 >
-                   <IoInformationCircleOutline size={20} />About
+                  <IoInformationCircleOutline size={20} /> About Us
                 </Link>
                 <Link
-                  to="/book"
-                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  to="/projects"
+                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white px-3 py-2 rounded-md text-md font-medium"
                 >
-                   <FiBook size={20} />Book
+                  <FaProjectDiagram size={20} /> Case Studies
                 </Link>
                 <Link
-                  to="/shop"
-                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  to="/faqs"
+                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white px-3 py-2 rounded-md text-md font-medium"
                 >
-                   <FiShoppingCart size={20} />Shop
+                  <RiQuestionAnswerLine size={20} /> FAQ's
                 </Link>
+                {/* Let's Talk Button */}
                 <Link
                   to="/contact"
-                  className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                  className="bg-blue-500 text-white px-4 py-2 ml-4 rounded-md font-medium hover:bg-blue-700 transition-colors ease-in-out"
                 >
-                   <IoMdContacts size={20} />Contact Us
+                  Let's Talk
                 </Link>
-                
               </div>
             </div>
           </div>
@@ -108,40 +91,47 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
               to="/"
-              className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleMenu}
             >
-              <FiHome size={20} />Home
+              <FiHome size={20} /> Home
+            </Link>
+            <Link
+              to="/service"
+              className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              onClick={toggleMenu}
+            >
+              <RiCustomerService2Line size={20} /> Service
             </Link>
             <Link
               to="/about"
-              className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleMenu}
             >
-              <IoInformationCircleOutline size={20} /> About
+              <IoInformationCircleOutline size={20} /> About Us
             </Link>
             <Link
-              to="/book"
-              className="text-zinc-900  flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              to="/projects"
+              className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleMenu}
             >
-               <FiBook size={20} />Book
+              <FaProjectDiagram size={20} /> Case Studies
             </Link>
             <Link
-              to="/shop"
-              className="text-zinc-900  flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              to="/faqs"
+              className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleMenu}
             >
-               <FiShoppingCart size={20} />Shop
+              <RiQuestionAnswerLine size={20} /> FAQ's
             </Link>
+            {/* Let's Talk Button for Mobile */}
             <Link
               to="/contact"
-              className="text-zinc-900  flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out  hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="bg-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition-colors ease-in-out"
               onClick={toggleMenu}
             >
-               <IoMdContacts size={20} />Contact Us
+              Let's Talk
             </Link>
-            
           </div>
         </div>
       )}
