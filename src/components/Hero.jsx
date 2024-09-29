@@ -8,7 +8,6 @@ const Hero = () => {
   const buttonRef = useRef(null);
 
   useEffect(() => {
-    // Animate words in the title
     const words = titleRef.current.querySelectorAll('span');
     gsap.from(words, {
       duration: 0.5,
@@ -18,32 +17,27 @@ const Hero = () => {
       ease: "power2.out",
     });
 
-    // Animate the paragraph
     gsap.from(paragraphRef.current, {
       duration: 0.5,
       opacity: 0,
       y: 20,
-      delay: words.length * 0.1, // Delay based on the number of words
+      delay: words.length * 0.1,
       ease: "power2.out",
     });
 
-    // Animate the button
     gsap.from(buttonRef.current, {
       duration: 0.5,
       opacity: 0,
       y: 20,
-      delay: words.length * 0.1 + 0.3, // Delay based on the number of words and an additional offset
+      delay: words.length * 0.1 + 0.3,
       ease: "power2.out",
     });
   }, []);
 
   return (
     <div className="bg-[#F0EEEB] flex flex-col md:flex-row items-center justify-between py-10 px-6 md:px-16">
-      
-      {/* Left Section - Text */}
       <div className="md:w-1/2 space-y-6">
         <h1 ref={titleRef} className="text-3xl md:text-5xl font-semibold uppercase leading-tight text-zinc-900">
-          {/* Wrap each word in a span for GSAP animation */}
           <span>Your</span> <span>Premier</span> <span>Partner</span> 
           <img 
             src="https://cdn.dribbble.com/users/2169669/screenshots/4378019/handshake.gif" 
@@ -65,8 +59,7 @@ const Hero = () => {
         </button>
       </div>
 
-      {/* Right Section - Image */}
-      <div className="mt-8 md:mt-0 md:w-[60%]"> {/* Increased image container width */}
+      <div className="mt-8 md:mt-0 md:w-[60%]">
         <img 
           src="https://www.wework.com/ideas/wp-content/uploads/sites/4/2021/10/WEWORK_FEATHER-1.gif" 
           alt="Coworking Spaces" 
