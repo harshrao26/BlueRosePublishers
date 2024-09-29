@@ -37,7 +37,7 @@ const Navbar = () => {
               <img
                 src="https://propques.com/wp-content/uploads/2023/12/Untitled_design__2_-removebg-preview-e1702983011868-60x61.png"
                 alt="Logo"
-                className="h-13 w-13"
+                className="h-13 w-13 "
               />
             </div>
             <div className="hidden sm:flex items-center w-full sm:ml-6">

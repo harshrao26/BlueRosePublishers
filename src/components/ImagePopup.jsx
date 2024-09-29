@@ -21,7 +21,7 @@ const ImagePopup = () => {
   ];
 
   return (
-    <div className="flex justify-center space-x-8 py-8">
+    <div className="flex justify-center px-4 py-16" id="services">
   {images.map((image, index) => (
     <div
       key={index}
@@ -33,7 +33,7 @@ const ImagePopup = () => {
       <img
         src={image.src}
         alt={image.title}
-        className="w-96 h-96 rounded-full shadow-xl transition-transform duration-300 transform group-hover:scale-105 hover:opacity-90 cursor-pointer"
+        className="w-40 h-40 ml-6 md:ml- lg:ml0 md:w-96 md:h-96 rounded-full shadow-xl transition-transform duration-300 transform group-hover:scale-105 hover:opacity-90 cursor-pointer"
       />
       {/* Image name and title */}
       <h1 className="w-full text-center font-semibold text-2xl pt-4 text-gray-800 group-hover:text-indigo-600 transition-colors duration-300">

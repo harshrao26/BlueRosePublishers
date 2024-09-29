@@ -2,13 +2,18 @@ import React from "react";
 
 const Offer = () => {
   return (
-    <div className=" mx-auto px-8 md:px-16 py-8">
+    <div className=" mx-auto px-8 md:px-16 py-">
       {/* Main Heading */}
-      <h1 className="text-4xl sm:text-5xl capitalize font-semibold text-center  py-8">
+      <h1 className="text-4xl sm:text-5xl capitalize font-semibold text-center  pb-8">
         What We Offer
+        <img
+          src="https://i.pinimg.com/originals/ae/f7/e5/aef7e5a8785d25818d138c04787666f9.gif"
+          alt=""
+          className="inline-block h-20"
+        />
       </h1>
 
-      <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12">
+      <div className="flex flex-col md:flex-row items-center justify-between  md:space-y-0 md:space-x-12">
         {/* Image */}
         <div className="md:w-1/2">
           <img
@@ -28,11 +33,12 @@ const Offer = () => {
             the COVID-19 pandemic that the key to a sustainable coworking
             business lies with asset owners. By generating additional revenue
             for asset owners, more coworking brands can thrive—even in
-            challenging times. This inspired the creation of <span className="font-bold">Propques</span>, India’s
-            only coworking consultancy dedicated to helping asset owners start,
-            manage, and grow their coworking journey. Our goal is to empower
-            asset owners to build sustainable coworking spaces that remain
-            resilient, no matter what the market brings.
+            challenging times. This inspired the creation of{" "}
+            <span className="font-bold">Propques</span>, India’s only coworking
+            consultancy dedicated to helping asset owners start, manage, and
+            grow their coworking journey. Our goal is to empower asset owners to
+            build sustainable coworking spaces that remain resilient, no matter
+            what the market brings.
           </p>
 
           {/* Button */}

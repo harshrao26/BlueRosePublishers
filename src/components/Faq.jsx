@@ -46,10 +46,10 @@ const FAQ = () => {
           >
             {/* Question */}
             <div
-              className="flex justify-between items-center px-6 py-4 cursor-pointer"
+              className="flex justify-between  items-center px-6 py-4 cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
-              <h2 className="text-lg md:text-xl font-medium">{faq.question}</h2>
+              <h2 className="text-lg md:text-xl font-semibold">{faq.question}</h2>
               <span className="text-xl md:text-2xl">
                 {activeIndex === index ? <FiChevronUp /> : <FiChevronDown />}
               </span>
@@ -57,8 +57,8 @@ const FAQ = () => {
 
             {/* Smooth Transition for Answer */}
             <div
-              className={`overflow-hidden transition-all duration-500 ${
-                activeIndex === index ? "max-h-[200px]" : "max-h-0"
+              className={`overflow-hidden transition-all ease-in-out ${
+                activeIndex === index ? "" : "max-h-0"
               }`}
             >
               <div className="px-6 py-4 bg-gray-50">

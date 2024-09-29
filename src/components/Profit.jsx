@@ -4,9 +4,9 @@ const Profit = () => {
   return (
     <div className="w-full flex flex-col md:flex-row px-8 md:px-16  items-center">
       {/* Text Section */}
-      <div className="md:w-1/2 space-y-8">
+      <div className="md:w-1/2 space-y-4">
         <h1 className="text-3xl md:text-4xl font-semibold leading-snug text-gray-900">
-          Maximize Your Asset’s Profit Potential in Just 6 Months
+          Maximize Your Asset’s Profit Potential in Just <span className="inline-block text-semibold text-white px-4 py-1 bg-blue-500">6 Months</span>
         </h1>
         <h1 className="text-lg md:text-xl leading-relaxed text-gray-700">
           <span className="text-5xl font-semibold font text-green-600">65% </span>
