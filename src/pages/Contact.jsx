@@ -23,17 +23,16 @@ const Contact = () => {
                   {
                     name: "Bengaluru office",
                     schedule: "Mon-Sat 9am to 5pm.",
-                    address: "100, Electronic City Phase-1, Bengaluru, Karnataka 560100 IN"
-                  },
+                    address: "Naagarabhavi, Bangalore 3rd Floor, Tushar Arcade, Service Road, Bengaluru, Karnataka 560072"                  },
                   {
                     name: "Head office",
                     schedule: "Mon-Sat 9am to 5pm.",
                     address: "12th Main Rd, Indiranagar, Bengaluru, Karnataka 560008 IN"
                   },
                   {
-                    name: "Karnataka office",
+                    name: "Lucknow office",
                     schedule: "Mon-Sat 9am to 5pm.",
-                    address: "42, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025 IN"
+                    address: "Enginnering College"
                   }
                 ].map((office, index) => (
                   <div key={index} className="fle flex-col space-y-2 pt- ">
