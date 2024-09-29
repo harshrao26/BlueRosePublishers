@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info and Logo */}
           <div>
             <img
-              src="https://your-logo-link-here" // Replace with your logo URL
+              src="https://propques.com/wp-content/uploads/2023/12/Untitled_design__2_-removebg-preview-e1702983011868-60x61.png" // Replace with your logo URL
               alt="logo"
               className="mb-4"
             />
