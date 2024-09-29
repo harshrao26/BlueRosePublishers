@@ -43,7 +43,7 @@ const Navbar = () => {
             <div className="hidden sm:flex items-center w-full sm:ml-6">
               <div className="flex justify-end gap-4 w-full">
                 <Link
-                  to="/"
+                  to="/home"
                   className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white px-3 py-2 rounded-md text-md font-medium"
                 >
                   <FiHome size={20} /> Home
@@ -61,7 +61,7 @@ const Navbar = () => {
                   <IoInformationCircleOutline size={20} /> About Us
                 </Link>
                 <Link
-                  to="/projects"
+                  to="/case"
                   className="text-zinc-900 flex gap-1 items-center hover:bg-zinc-700 transition-all ease-in-out hover:text-white px-3 py-2 rounded-md text-md font-medium"
                 >
                   <FaProjectDiagram size={20} /> Case Studies

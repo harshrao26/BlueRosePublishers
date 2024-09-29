@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "../components/Hero.jsx";
 import Marqueee from "../components/Marquee.jsx";
-import About from "./About.jsx";
 import Features from "@/components/Features.jsx";
 import ImagePopup from "@/components/ImagePopup.jsx";
 import Offer from "@/components/Offer.jsx";
@@ -13,16 +12,16 @@ import Faq from "@/components/Faq.jsx";
 const Home = () => {
   return (
     <div>
-      <Hero />
-      <Marqueee />
-      <Features />
-      <ImagePopup />
-      <Offer />
-      <Offer2 />
-      <Profit />
-      <Risk />
-      <Faq />
-      <Contact />
+      <Hero id="home" />
+      <Marqueee id="case" />
+      <Features id="service" />
+      <ImagePopup id="about" />
+      <Offer id="" />
+      <Offer2 id="" />
+      <Profit id="" />
+      <Risk id="" />
+      <Faq id="faq" />
+      <Contact id="contact" />
     </div>
   );
 };
