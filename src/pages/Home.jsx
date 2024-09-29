@@ -9,7 +9,7 @@ import Offer2 from "@/components/Offer2.jsx";
 import Profit from "@/components/Profit.jsx";
 import Risk from "@/components/Risk.jsx";
 import Contact from "./Contact.jsx";
-import Shop from "./Shop.jsx";
+import Faq from "@/components/Faq.jsx";
 const Home = () => {
   return (
     <div>
@@ -21,7 +21,7 @@ const Home = () => {
       <Offer2 />
       <Profit />
       <Risk />
-      {/* <Shop /> */}
+      <Faq />
       <Contact />
     </div>
   );
