@@ -37,11 +37,11 @@ const Hero = () => {
   return (
     <div className="bg-[#F0EEEB] flex flex-col md:flex-row items-center justify-between py-10 px-6 md:px-16">
       <div className="md:w-1/2 space-y-6">
-        <h1 ref={titleRef} className="text-3xl md:text-5xl font-semibold uppercase leading-tight text-zinc-900">
+        <h1 ref={titleRef} className="text-3xl md:text-5xl font-semibold capitalize leading-tight text-zinc-900">
           <span>Your</span> <span>Premier</span> <span>Partner</span> 
           <img 
             src="https://cdn.dribbble.com/users/2169669/screenshots/4378019/handshake.gif" 
-            className='inline-block rounded-full md:h-16 h-10' 
+            className='inline-block rounded-full md:h-16 h-10 px-2' 
             alt="" 
           /> 
           <span>for</span> <span>Monetizing</span> <span>Commercial</span> <span>Assets</span> <span>with</span> <span>Coworking</span> <span>Spaces.</span>
@@ -52,7 +52,7 @@ const Hero = () => {
         </p>
 
         <button 
-          ref={buttonRef} 
+           
           className="px-6 py-3 flex items-center gap-2 rounded shadow-lg bg-zinc-800 text-white text-lg hover:bg-zinc-700 transition duration-300 ease-in-out"
         >
           Let's Talk <IoIosCall size={20} />
