@@ -2,7 +2,7 @@ import React from "react";
 
 const Profit = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row px-8  items-center">
+    <div className="w-full flex flex-col md:flex-row px-8 md:px-16  items-center">
       {/* Text Section */}
       <div className="md:w-1/2 space-y-8">
         <h1 className="text-3xl md:text-4xl font-semibold leading-snug text-gray-900">

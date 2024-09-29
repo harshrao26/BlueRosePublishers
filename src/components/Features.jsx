@@ -5,7 +5,7 @@ import { IoIosLink } from "react-icons/io";
 
 const Features = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full gap-8 md:px-8 py-8 px-4">
+    <div className="flex flex-col md:flex-row w-full gap-8 md:px-16 py-8 px-4">
       
       {/* Left Section - Quote */}
       <div className="md:w-1/3 h-auto flex items-center">

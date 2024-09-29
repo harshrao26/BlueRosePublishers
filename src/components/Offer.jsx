@@ -2,7 +2,7 @@ import React from "react";
 
 const Offer = () => {
   return (
-    <div className=" mx-auto px-8 py-8">
+    <div className=" mx-auto px-8 md:px-16 py-8">
       {/* Main Heading */}
       <h1 className="text-4xl sm:text-5xl capitalize font-semibold text-center  py-8">
         What We Offer

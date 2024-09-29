@@ -2,7 +2,7 @@ import React from "react";
 
 const Risk = () => {
   return (
-    <div className="relative w-full h-auto px-8 md:px-8  bg-[#001132]">
+    <div className="relative w-full h-auto px-8 md:px-16  bg-[#001132]">
       {/* Background Image */}
       <div>
         <img
