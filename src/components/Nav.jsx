@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; 
-import { FiHome, FiMenu, FiX } from 'react-icons/fi'; 
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FiHome, FiMenu, FiX } from "react-icons/fi";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { RiCustomerService2Line, RiQuestionAnswerLine } from "react-icons/ri";
 import { FaProjectDiagram } from "react-icons/fa";
@@ -72,6 +72,8 @@ const Navbar = () => {
                 >
                   <RiQuestionAnswerLine size={20} /> FAQ's
                 </Link>
+              </div>
+              <div>
                 {/* Let's Talk Button */}
                 <Link
                   to="/contact"
@@ -82,6 +84,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+          <div></div>
         </div>
       </div>
 

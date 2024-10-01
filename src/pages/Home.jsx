@@ -9,10 +9,12 @@ import Profit from "@/components/Profit.jsx";
 import Risk from "@/components/Risk.jsx";
 import Contact from "./Contact.jsx";
 import Faq from "@/components/Faq.jsx";
+import Navbar from "@/components/Navbar.jsx";
 const Home = () => {
   return (
     <div>
       <Hero id="home" />
+      <Navbar id="home" />
       <Marqueee id="case" />
       <Features id="service" />
       <ImagePopup id="about" />
