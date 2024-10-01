@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
 
       {/* Navigation links for larger screens */}
-      <div className={`md:flex gap-10 arial text-[1.12rem] text-[#2362AB] hidden ${menuOpen ? 'block' : 'hidden'} md:block`}>
+      <div className={`md:flex gap-10 arial text-[1rem] text-[#2362AB] hidden ${menuOpen ? 'block' : 'hidden'} md:block`}>
         <Link to="/" className='font-normal'>Home</Link>
         <Link to="/service" className='font-normal'>Our Service</Link>
         <Link to="/about" className='font-normal'>About Us</Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
       </div>
 
       {/* Let's Talk button */}
-      <button className="bg-[#2362AB] font-normal text-[1.12rem] text-white px-6 flex items-center justify-center rounded-xl py-2.5 arial hidden md:block">
+      <button className="bg-[#2362AB] font-normal text-[1.05rem] text-white px-6 flex items-center justify-center rounded-xl py-2.5 arial hidden md:block">
         Let's Talk
       </button>
 
