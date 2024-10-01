@@ -1,130 +1,76 @@
-import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import React from 'react';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-800 text-gray-400 py-10">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          {/* Company Info and Logo */}
-          <div>
+    <footer className="bg-white text-[#2362AB] py-10 px-6 md:px-16 ">
+      <div className="max-w-7xl mx-auto">
+        {/* Footer Content - Grid Layout for Desktop and Flex Column for Mobile */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-2 py-8 border-t-[3px] border-b-[3px]  border-blue-600">
+          {/* Logo and Description */}
+          <div className="col-span-1 flex flex-col items-center md:items-start">
             <img
-              src="https://propques.com/wp-content/uploads/2023/12/Untitled_design__2_-removebg-preview-e1702983011868-60x61.png" // Replace with your logo URL
-              alt="logo"
-              className="mb-4"
+              src="https://propques.com/wp-content/uploads/2023/12/Untitled_design__2_-removebg-preview-e1702983011868-60x61.png"
+              alt="Logo"
+              className="h-16 mb-4"
             />
-            <p className="text-gray-300 text-sm">
-              Transform your property into a high-value, co-working space. Unlock
-              potential revenue streams with ease.
+            <p className="text-center md:text-left text-sm">
+              Helping property owners, entrepreneurs, and real estate professionals transform and matchmake spaces into profitable coworking business.
             </p>
           </div>
 
           {/* Menu Section */}
-          <div>
-            <h2 className="text-white font-semibold text-lg mb-4">Menu</h2>
+          <div className="col-span-1">
+            <h3 className="font-semibold text-lg mb-2">Menu</h3>
             <ul>
-              <li className="mb-2">
-                <a href="#blog" className="hover:text-white">
-                  Blog
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#careers" className="hover:text-white">
-                  Careers
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#contact" className="hover:text-white">
-                  Contact Us
-                </a>
-              </li>
+              <li><a href="#" className="hover:underline">Blog</a></li>
+              <li><a href="#" className="hover:underline">Careers</a></li>
+              <li><a href="#" className="hover:underline">Contact Us</a></li>
             </ul>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h2 className="text-white font-semibold text-lg mb-4">Quick Links</h2>
+          <div className="col-span-1">
+            <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
             <ul>
-              <li className="mb-2">
-                <a href="#offices" className="hover:text-white">
-                  Looking for Offices
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#partners" className="hover:text-white">
-                  Partners
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#webinars" className="hover:text-white">
-                  Webinars
-                </a>
-              </li>
+              <li><a href="#" className="hover:underline">Looking for Offices</a></li>
+              <li><a href="#" className="hover:underline">Partners</a></li>
+              <li><a href="#" className="hover:underline">Webinar</a></li>
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h2 className="text-white font-semibold text-lg mb-4">Contact Us</h2>
-            <p>Naagarabhavi, Bangalore</p>
-            <p>3rd Floor, Tushar Arcade, Service Road</p>
-            <p>Bengaluru, Karnataka 560072</p>
-            <a href="mailto:buzz@propques.com" className="block mt-4 hover:text-white">
-              buzz@propques.com
-            </a>
-            <a href="tel:+917392037856" className="block mt-1 hover:text-white">
-              +91-7392037856
-            </a>
+          {/* Contact Us */}
+          <div className="col-span-1 border-r-[3px]  border-blue-600">
+            <h3 className="font-semibold text-lg mb-2 ">Contact Us</h3>
+            <p className="text-sm">
+              Naagarabhaavi, Bangalore 3rd Floor, Tushar Arcade, Service Road, Naagarabhaavi, Bengaluru, Karnataka 560072
+            </p>
+            <a href="mailto:Buzz@propques.com" className="text-blue-600 hover:underline">Buzz@propques.com</a>
+            <p className="text-blue-600">+91-7392037856</p>
           </div>
-        </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-600 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          {/* Newsletter */}
-          <div className="mb-4 md:mb-0">
-          <h2 className="text-white font-semibld text-lg ">Want Newsletter?</h2>
-
-            <form className="flex">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="w-full p-2 bg-gray-700 border border-gray-600 text-gray-300 focus:outline-none focus:border-blue-400"
-              />
-              <button className="ml-2 px-4 py-2 bg-blue-600 text-white hover:bg-blue-700">
-                Subscribe
-              </button>
+          {/* Newsletter Section */}
+          <div className="col-span-1 ">
+            <h3 className="font-semibold text-lg mb-2">Newsletter</h3>
+            <form className="flex flex-col gap-3">
+              <input type="text" placeholder="Name" className="border p-2 rounded" />
+              <input type="email" placeholder="E-mail" className="border p-2 rounded" />
+              <button className="bg-[#2362AB] text-white py-2 rounded">Subscribe</button>
             </form>
-          </div>
-
-          {/* Social Icons */}
-          <div className="flex space-x-4">
-            <a href="https://www.facebook.com" className="text-gray-400 hover:text-white">
-              <FaFacebookF />
-            </a>
-            <a href="https://www.twitter.com" className="text-gray-400 hover:text-white">
-              <FaTwitter />
-            </a>
-            <a href="https://www.linkedin.com" className="text-gray-400 hover:text-white">
-              <FaLinkedinIn />
-            </a>
+            <div className="flex gap-3 mt-4">
+              <FaInstagram size={24} className="text-[#2362AB] hover:text-blue-600 cursor-pointer" />
+              <FaLinkedin size={24} className="text-[#2362AB] hover:text-blue-600 cursor-pointer" />
+            </div>
           </div>
         </div>
 
-        {/* Bottom Links */}
-        <div className="text-center mt-6 text-sm">
-          <p>
-            <a href="#privacy" className="hover:underline">
-              Privacy Policy
-            </a>{" "}
-            |{" "}
-            <a href="#terms" className="hover:underline">
-              Terms and Conditions
-            </a>{" "}
-            |{" "}
-            <a href="#sitemap" className="hover:underline">
-              Sitemap
-            </a>{" "}
-            | Copyright &copy; 2024
+        {/* Footer Bottom - Links */}
+        <div className="text-center  mt-8 pt-4 text-sm">
+          <p className="text-gray-500">
+            <a href="#" className="hover:underline">Privacy Policy</a> | 
+            <a href="#" className="hover:underline ml-2">Terms and Conditions</a> | 
+            <a href="#" className="hover:underline ml-2">Sitemap</a> | 
+            <span className="ml-2">Copyright © 2024</span>
           </p>
         </div>
       </div>
