@@ -36,8 +36,10 @@ const Testimonial = () => {
   return (
     <div className="max-w-4xl mx-auto py-8">
      <h1 className="text-5xl capitalize w-full font-semibold text-center py-8 ">
-        Testimonials
+     Brands We’ve Built
+
         
+      <p className="text-center text-base ">Helping property owners, entrepreneurs, and real estate professionals transform and matchmake spaces into profitable coworkingbuisness</p>
       </h1>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
       {testimonials.map((testimonial, index) => (

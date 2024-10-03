@@ -10,7 +10,7 @@ const Profit = () => {
           6 Months
         </span>
       </h1>
-      <div className="flex justify-center w-full flex-col items-cener space-y-4 ">
+      <div className="flex justify-center w-full flex-col items-cener space-y-4 pb-8">
         <h1 className="text-lg md:text-lg md:px-64 text-center leading-relaxed text-gray-700">
           <span className="text-5xl  font-semibold font text-blue-600">
             65%{" "} <br />
