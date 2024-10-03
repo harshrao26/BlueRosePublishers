@@ -21,18 +21,23 @@ const Contact = () => {
               <div className="space-y-4 divide-y-2 pb-8">
                 {[
                   {
-                    name: "Bengaluru office",
-                    schedule: "Mon-Sat 9am to 5pm.",
+                    name: "Corporate office",
+                    schedule: "Mon-Sat 9:30am to 6:30pm.",
                     address: "Naagarabhavi, Bangalore 3rd Floor, Tushar Arcade, Service Road, Bengaluru, Karnataka 560072"                  },
                   {
-                    name: "Head office",
-                    schedule: "Mon-Sat 9am to 5pm.",
-                    address: "12th Main Rd, Indiranagar, Bengaluru, Karnataka 560008 IN"
+                    name: "Indore office",
+                    schedule: "Mon-Sat 9:30am to 6:30pm.",
+                    address: "3, Aditya Nagar, Vishnu Puri Colony, Indore, Madhya Pradesh 452014"
+                  },
+                  {
+                    name: "Mumbai office",
+                    schedule: "Mon-Sat 9:30am to 6:30pm.",
+                    address: "Tower 4, 5, Vashi Railway Station Rd, Sector 30, Vashi, Navi Mumbai, Maharashtra 402107"
                   },
                   {
                     name: "Lucknow office",
-                    schedule: "Mon-Sat 9am to 5pm.",
-                    address: "Enginnering College"
+                    schedule: "Mon-Sat 9:30am to 6:30pm.",
+                    address: "2nd Floor, JSV Hyundai Building CP-53, near Engineering College Chauraha, near CNG Petrol Pump, Lucknow, Uttar Pradesh 226021"
                   }
                 ].map((office, index) => (
                   <div key={index} className="fle flex-col space-y-2 pt- ">

@@ -53,17 +53,17 @@ const Navbar = () => {
             <li>
               <Link to="/" className="text-lg hover:text-gray-400" onClick={toggleMenu}>Home</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/services" className="text-lg hover:text-gray-400" onClick={toggleMenu}>Our Service</Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/about" className="text-lg hover:text-gray-400" onClick={toggleMenu}>About Us</Link>
+            </li> */}
+            <li>
+              <Link to="/" className="text-lg hover:text-gray-400" onClick={toggleMenu}>Blogs</Link>
             </li>
             <li>
-              <Link to="/case-studies" className="text-lg hover:text-gray-400" onClick={toggleMenu}>Case Studies</Link>
-            </li>
-            <li>
-              <Link to="/faqs" className="text-lg hover:text-gray-400" onClick={toggleMenu}>FAQs</Link>
+              <Link to="/careers" className="text-lg hover:text-gray-400" onClick={toggleMenu}>Careers</Link>
             </li>
           </ul>
         </div>

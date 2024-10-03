@@ -17,6 +17,11 @@ const FAQ = () => {
         "In the Indian perspective, coworking refers to the collaborative work environment that brings together professionals, entrepreneurs, and freelancers from diverse industries and companies to share a common office space. This concept offers convenience by allowing individuals to share facilities, utilities, and services, leading to cost savings over time. Coworking spaces provide a dedicated location for conducting business activities and project work, while also fostering networking opportunities and social interactions. In essence, coworking offers an affordable alternative to working from home or coffee shops, providing a shared workspace that promotes productivity and collaboration.",
     },
     {
+      question: "What is flexible office space?",
+      answer:
+        "A flexible office space refers to a versatile workspace that offers multiple options for desk layouts and office configurations. This adaptability allows members to customize their environment to suit their specific requirements. Flexible office spaces typically provide essential office amenities such as desks, chairs, computers, storage, and decor. They offer the flexibility to accommodate teams of different sizes, cater to various industries, and cater to the unique preferences of individuals. The aim is to create a workspace that can be easily adapted and optimised for productivity and comfort.",
+    },
+    {
       question: "How can coworking increase revenue?",
       answer:
         "Hiring a propques as your coworking consultant provides you with expert guidance, customized solutions, and valuable market insights. Their extensive industry knowledge allows them to address your specific challenges and help you make well-informed decisions. By leveraging their tailored recommendations, you can unlock the full potential of your coworking space. Propques' wide network also opens doors to valuable partnerships, while their cost-effective strategies optimize your operations. With their ongoing support, you can ensure long-term success. By tapping into their expertise and saving time and resources, hiring a propques empowers your coworking business to flourish in a competitive market.",

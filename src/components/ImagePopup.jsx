@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import img1 from "../../public/img1.png";
 import img2 from "../../public/img2.png";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa6";
+
 const ImagePopup = () => {
   const images = [
     {
@@ -22,16 +23,22 @@ const ImagePopup = () => {
   ];
 
   return (
-    <div className="flex marker:px-16 py-8 justify-evenly">
-      {images.map((val, key) => {
-        return (
-          <div className="flex flex-col items-center justify-center">
-            <img src={val.src} alt="" className="rounded-full h-80 w-80"/> 
-            <h1 className="text-2xl font-semibold">{val.title}</h1>           
-          </div>
-        )
-      })}
-    </div>
+    <>
+      <h1 className="text-5xl capitalize w-full font-semibold text-center py-8">
+        Meet Our Founders
+      </h1>
+      <div className=" flex justify-evenly pb-8">
+        {images.map((val, key) => {
+          return (
+            <div className="flex flex-col items-center justify-center">
+              <img src={val.src} alt="" className="rounded-full h-80 w-80" />
+              <h1 className="text-2xl font-semibold">{val.title}</h1>
+              <FaLinkedin className="text-blue-500 text-xl" />
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 };
 

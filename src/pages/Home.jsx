@@ -10,6 +10,7 @@ import Risk from "@/components/Risk.jsx";
 import Contact from "./Contact.jsx";
 import Faq from "@/components/Faq.jsx";
 import Apply from "@/components/Apply.jsx";
+import Testimonial from "../components/Testimonials.jsx";
 const Home = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const Home = () => {
       <Offer2 id="" />
       <Profit id="" />
       <Risk id="" />
+      <Testimonial />
       <Faq id="faq" />
       <Contact id="contact" />
     </div>

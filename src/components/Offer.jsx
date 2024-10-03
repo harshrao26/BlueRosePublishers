@@ -2,15 +2,11 @@ import React from "react";
 
 const Offer = () => {
   return (
-    <div className=" mx-auto px-8 md:px-16 py-">
+    <div className=" mx-auto px-8 md:px-16 py-8">
       {/* Main Heading */}
       <h1 className="text-4xl sm:text-5xl capitalize font-semibold text-center  pb-8">
         What We Offer
-        <img
-          src="https://i.pinimg.com/originals/ae/f7/e5/aef7e5a8785d25818d138c04787666f9.gif"
-          alt=""
-          className="inline-block h-20"
-        />
+        
       </h1>
 
       <div className="flex flex-col md:flex-row items-center justify-between  md:space-y-0 md:space-x-12">
