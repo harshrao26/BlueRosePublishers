@@ -33,7 +33,7 @@ const ImagePopup = () => {
             <div className="flex flex-col items-center justify-center">
               <img src={val.src} alt="" className="rounded-full h-80 w-80" />
               <h1 className="text-2xl font-semibold">{val.title}</h1>
-              <FaLinkedin className="text-blue-500 text-xl" />
+              <FaLinkedin className="text-blue-500 text-4xl" />
             </div>
           );
         })}

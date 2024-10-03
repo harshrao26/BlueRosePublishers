@@ -24,6 +24,7 @@ const Home = () => {
       <Profit id="" />
       <Risk id="" />
       <Testimonial />
+      
       <Faq id="faq" />
       <Contact id="contact" />
     </div>

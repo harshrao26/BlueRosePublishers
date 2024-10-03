@@ -28,12 +28,7 @@ const Profit = () => {
         </h1>
         
       </div>
-      <div className="pt-8">
-        <Button />
-      </div>
-      <p className="text-sm pt-4">Connect with us to scale your business
-
-</p>
+    
     </div>
   );
 };
