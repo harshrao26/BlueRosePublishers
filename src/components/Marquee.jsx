@@ -43,6 +43,8 @@ const reviews = [
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
+// const firstRow = reviews.slice(0, reviews.length / 2);
+// const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({ img, name, username, body }) => {
   return (
@@ -69,7 +71,7 @@ export default function Marqueee() {
   return (
     <>
     <h1 className="text-5xl capitalize w-full font-semibold text-center py-4 ">
-    Spaces we have transformed ​<img src="https://i.pinimg.com/originals/7e/96/d9/7e96d994f29b388f63f7aa77ff2bea78.gif" alt="" className="inline-block h-20 pb-2" />
+    Spaces we have transformed 
 
     </h1>
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg bordr bg-background ">

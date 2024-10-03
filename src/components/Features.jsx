@@ -6,13 +6,9 @@ import { IoIosLink } from "react-icons/io";
 const Features = () => {
   return (
     <>
-      <h1 className="text-5xl capitalize w-full font-semibold text-center pt-4 ">
+      <h1 className="text-5xl capitalize w-full font-semibold text-center py-4 ">
         Our Services​
-        <img
-          src="https://i.gifer.com/OFAF.gif"
-          alt=""
-          className="inline-block h-24 "
-        />
+        
       </h1>
       <div className="flex flex-col md:flex-row w-full gap-8 md:px-16 py- px-4">
         {/* Left Section - Quote */}
