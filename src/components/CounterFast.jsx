@@ -36,7 +36,7 @@ const Counter = ({ desiredNumber }) => {
     if (isVisible) {
       timer = setInterval(() => {
         setCount((prevCount) => {
-          if (prevCount < desiredNumber) {
+          if (prevCount <= desiredNumber) {
             return prevCount + 10; // Increment the count
           } else {
             clearInterval(timer); // Stop the timer when desiredNumber is reached

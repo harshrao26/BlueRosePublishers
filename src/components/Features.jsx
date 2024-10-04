@@ -7,7 +7,7 @@ import Button from "./Button";
 const Features = () => {
   return (
     <>
-      <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center py-4 ">
+      <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center py-8 ">
         Our Services​
       </h1>
       <div className="flex flex-col md:flex-row w-full gap-8 md:px-16 py- px-4">

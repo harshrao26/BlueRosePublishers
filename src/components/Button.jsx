@@ -9,7 +9,7 @@ const Button = ({ name }) => {
     <div>
       <button
         onClick={toggleForm} // Call toggle function on click
-        className="bg-zinc-800 w-full shadow-xl sm:w-auto text-center hover:bg-zinc-900 transition-all ease-in-out px-4 py-2 sm:px-6 sm:py-3 rounded-xl text-white text-sm sm:text-md flex items-center justify-center gap-2"
+        className="bg-blue-500 w-full shadow-xl sm:w-auto text-center hover:bg-blue-600 transition-all ease-in-out px-4 py-2 sm:px-6 sm:py-3 rounded-xl text-white text-sm sm:text-md flex items-center justify-center gap-2"
       >
         <IoChatbubblesSharp className="text-lg sm:text-xl" />
         {name}

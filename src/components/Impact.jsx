@@ -5,7 +5,7 @@ import CounterFast  from "./CounterFast";
 const Impact = () => {
   return (
     <div className="px-4 md:px-16 py-8">
-      <h1 className="md:text-5xl text-3xl capitalize w-full font-semibold text-center py-4">
+      <h1 className="md:text-5xl text-3xl capitalize w-full font-semibold text-center py-8">
         Impact That We Have Created
       </h1>
 
@@ -14,14 +14,14 @@ const Impact = () => {
         <div className="border-[1px] rounded-xl p-4">
           <h1 className="text-2xl text-blue-500 font-semibold">Sqft managed </h1>
           <h1 className="flex w-full justify-center text-xl gap-1 font-semibold">
-            <Counter desiredNumber={10} /> lac+
+            <Counter desiredNumber={10} /> Lac+
           </h1>
         </div>
 
         <div className="border-[1px] rounded-xl p-4">
           <h1 className="text-2xl text-blue-500 font-semibold ">Client managed</h1>
-          <h1 className="flex w-full justify-center text-xl gap-1 font-semibold">
-            <Counter desiredNumber={100} /> +
+          <h1 className="flex w-full justify-center text-xl font-semibold">
+            <Counter desiredNumber={100} />+
           </h1>
         </div>
 
@@ -35,7 +35,7 @@ const Impact = () => {
         <div className="border-[1px] rounded-xl p-4">
           <h1 className="text-2xl text-blue-500 font-semibold">Revenue generated</h1>
           <h1 className="flex w-full justify-center  font-semibold text-xl gap-2">
-            <Counter desiredNumber={10} /> million
+            <Counter desiredNumber={10} /> Million
           </h1>
         </div>
 
@@ -49,7 +49,7 @@ const Impact = () => {
         <div className="border-[1px] rounded-xl p-4">
           <h1 className="text-2xl text-blue-500 font-semibold">Rental yield</h1>
           <h1 className="flex w-full text-xl font-semibold justify-center">
-            <Counter desiredNumber={14} />% - <Counter desiredNumber={16} /> %
+            <Counter desiredNumber={14} />%- <Counter desiredNumber={16} /> %
           </h1>
         </div>
       </div>
