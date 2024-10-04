@@ -9,7 +9,7 @@ const ModalForm = () => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[10000000000000]">
-      <div className="relative bg-white rounded-lg shadow-lg p-8 max-w-2xl w-full"> 
+      <div className="relative bg-zinc-300 rounded-lg shadow-lg p-8 max-w-2xl w-full"> 
         {/* Close Button */}
         <button
           onClick={toggleForm}

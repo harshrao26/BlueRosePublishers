@@ -58,7 +58,7 @@ const Offer = () => {
         {/* Image */}
         <div className="md:w-1/2">
           <img
-            src={s1}
+            src='https://img.freepik.com/premium-vector/home-office-interior-workplace-work-night-close-office_39422-219.jpg'
             alt="Coworking Spaces"
             className="w-full h-[75vh] rounded-lg shadow-lg object-cover"
           />

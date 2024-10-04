@@ -13,7 +13,7 @@ const Offer = () => {
         {/* Image */}
         <div className="md:w-1/2">
           <img
-            src="https://propques.com/wp-content/uploads/2024/09/Asset-6-1-jpg.webp"
+            src="https://img.freepik.com/free-vector/office-interior-workplace_24908-56588.jpg"
             alt="Coworking Spaces"
             className="w-full h-[75vh] rounded-lg shadow-lg object-cover"
           />
