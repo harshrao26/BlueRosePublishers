@@ -28,7 +28,7 @@ const Apply = () => {
           showApply ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
         }`}
       >
-        <h1 className="text-white text-xl">Want to work with us?</h1>
+        <h1 className="text-white md:text-xl text-base ">Want to work with us?</h1>
         <Button name="Let's Talk"/>
       </div>
     </>

@@ -24,7 +24,7 @@ const ImagePopup = () => {
 
   return (
     <>
-      <h1 className="text-5xl capitalize w-full font-semibold text-center py-8">
+      <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center py-8">
         Meet Our Founders
       </h1>
       <div className=" flex justify-evenly pb-8">
@@ -32,8 +32,8 @@ const ImagePopup = () => {
           return (
             <div className="flex flex-col items-center justify-center">
               <img src={val.src} alt="" className="rounded-full md:h-80 md:w-80 h-40 w-40 " />
-              <h1 className="text-2xl font-semibold">{val.title}</h1>
-              <FaLinkedin className="text-blue-500 text-4xl" />
+              <h1 className="md:text-2xl text-sm font-semibold">{val.title}</h1>
+              <FaLinkedin className="text-blue-500 md:text-4xl text-2xl" />
             </div>
           );
         })}

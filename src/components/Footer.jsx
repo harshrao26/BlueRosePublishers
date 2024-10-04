@@ -34,8 +34,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
             <ul>
               <li><a href="#" className="hover:underline">Looking for Offices</a></li>
-              <li><a href="#" className="hover:underline">Partners</a></li>
-              <li><a href="#" className="hover:underline">Webinar</a></li>
+             
             </ul>
           </div>
 
@@ -65,7 +64,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom - Links */}
-        <div className="text-center  mt-8 pt-4 text-sm">
+        <div className="text-center  my-8 pt-4 text-sm">
           <p className="text-gray-500">
             <a href="#" className="hover:underline">Privacy Policy</a> | 
             <a href="#" className="hover:underline ml-2">Terms and Conditions</a> | 

@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Offer = () => {
   return (
-    <div className=" mx-auto px-8 md:px-16 py-8">
+    <div className=" mx-auto px-4 md:px-16 py-8">
       {/* Main Heading */}
       <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12">
         {/* Text Content */}

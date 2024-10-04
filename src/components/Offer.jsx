@@ -3,9 +3,9 @@ import Button from "./Button";
 
 const Offer = () => {
   return (
-    <div className=" mx-auto px-8 md:px-16 py-8">
+    <div className=" mx-auto px-4 md:px-16 p8">
       {/* Main Heading */}
-      <h1 className="text-4xl sm:text-5xl capitalize font-semibold text-center  pb-8">
+      <h1 className="md:text-5xl text-3xl  capitalize font-semibold text-center  pb-8">
         What We Offer
       </h1>
 

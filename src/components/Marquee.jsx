@@ -70,7 +70,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 export default function Marqueee() {
   return (
     <>
-    <h1 className="text-5xl capitalize w-full font-semibold text-center py-4 ">
+    <h1 className="md:text-5xl text-3xl capitalize w-full font-semibold text-center py-4 ">
     Spaces we have transformed 
 
     </h1>

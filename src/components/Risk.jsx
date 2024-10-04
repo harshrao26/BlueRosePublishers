@@ -4,7 +4,7 @@ import { DivideCircle } from "lucide-react";
 
 const Risk = () => {
   return (
-    <div className="flex flex-col md:flex-row px-16 bg-blue-500 py-4  shadow-lg">
+    <div className="flex flex-col md:flex-row md:px-16 px-4 bg-blue-500 py-4  shadow-lg">
       {/* Left Section - Image */}
       <div className="flex-1 mb-4 md:mb-0">
         <img
@@ -15,7 +15,7 @@ const Risk = () => {
       </div>
       
       {/* Right Section - Text Content */}
-      <div className="flex-1 flex flex-col justify-center px-4">
+      <div className="flex-1 flex flex-col justify-center ">
         <h1 className="text-3xl md:text-4xl font-semibold text-[#ffffff] mb-4">
           Maximize Revenue and Minimize Risk with Coworking Spaces
         </h1>

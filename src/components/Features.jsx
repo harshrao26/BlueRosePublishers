@@ -7,22 +7,22 @@ import Button from "./Button";
 const Features = () => {
   return (
     <>
-      <h1 className="text-5xl capitalize w-full font-semibold text-center py-4 ">
+      <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center py-4 ">
         Our Services​
       </h1>
       <div className="flex flex-col md:flex-row w-full gap-8 md:px-16 py- px-4">
         {/* Left Section - Quote */}
         <div className="md:w-1/3 h-auto flex items-center">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl text-center md:text-left">
-            <RiDoubleQuotesL className="text-red-500 inline-block text " />
+          <h1 className="text-xl md:text-4xl lg:text-5xl text-center md:text-left">
+            <RiDoubleQuotesL className="text-blue-500 inline-block text " />
             Maximize Your Asset's Potential with{" "}
             <span className="font-semibold font">Coworking Consultancy</span>
-            <RiDoubleQuotesR className="text-green-500 inline-block text " />
+            <RiDoubleQuotesR className="text-blue-500 inline-block text " />
           </h1>
         </div>
 
         {/* Middle Section - Branding */}
-        <div className="md:w-1/3 w-full  rounded md:mt-10 hover:scale-105 transition-all ease-in-out bg-red-500  flex flex-col items-center justify-around p-8 shadow-xl text-center">
+        <div className="md:w-1/3 w-full  rounded md:mt-10 hover:scale-105 transition-all ease-in-out bg-blue-500  flex flex-col items-center justify-around p-8 shadow-xl text-center">
           <IoMdBarcode className="text-white mb-4" size={60} />
           <p className="text-white text-base leading-5 text-justify">
             Looking to build your own commercial asset brand with seamless
@@ -37,7 +37,7 @@ const Features = () => {
         </div>
 
         {/* Right Section - Partnership */}
-        <div className="md:w-1/3 w-full rounded mb-10 md:mb-10 hover:scale-105 transition-all ease-in-out  shadow-xl  bg-green-500 flex flex-col items-center justify-around p-8 text-center">
+        <div className="md:w-1/3 w-full rounded mb-10 md:mb-10 hover:scale-105 transition-all ease-in-out  shadow-xl  bg-blue-500 flex flex-col items-center justify-around p-8 text-center">
           <IoIosLink className="text-white mb-4" size={60} />
           <p className="text-white text-base leading-5 text-justify">
             Looking to partner with a coworking brand? We’ll take a mandate and
