@@ -9,10 +9,10 @@ const Contact = () => {
             <div className="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0">
               {/* Left Section - Title */}
               <div className="space-y-4">
-                <p className="w-full text-3xl md:text-4xl font-bold text-zinc-900">
+                <p className="w-full text-3xl md:text-4xl font-bold text-blue-500">
                   Our Offices
                 </p>
-                <p className="w-full text-lg text-zinc-600">
+                <p className="w-full text-lg text-zinc-800">
                   Find us at these locations.
                 </p>
               </div>
@@ -46,13 +46,13 @@ const Contact = () => {
                   },
                 ].map((office, index) => (
                   <div key={index} className="flex flex-col space-y-2 ">
-                    <p className="w-full text-xl md:text-2xl font-semibold text-zinc-900">
+                    <p className="w-full text-xl md:text-2xl font-semibold text-blue-500">
                       {office.name}
                     </p>
-                    <p className="w-full text-base text-zinc-600">
+                    <p className="w-full text-base text-zinc-800">
                       {office.schedule}
                     </p>
-                    <p className="text-sm font-semibold text-zinc-600">
+                    <p className="text-sm font-semibold text-black">
                       {office.address}
                     </p>
                   </div>

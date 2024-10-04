@@ -9,7 +9,7 @@ const Offer = () => {
       <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12">
         {/* Text Content */}
         <div className="md:w-1/2 space-y-6">
-          <h1 className="text-2xl md:text-3xl font-bold  leading-snug">
+          <h1 className="text-2xl md:text-3xl font-bold text-blue-500 leading-snug">
             Leverage Our Expertise in Coworking Consultancy
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed">

@@ -40,7 +40,7 @@ const Testimonial = () => {
   return (
     <div className="max-w-4xl mx-auto py-8">
      <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center py-8 ">
-     Testimonials
+     Spaces Owner Quotes
 
 
         

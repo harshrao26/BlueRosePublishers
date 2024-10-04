@@ -10,8 +10,8 @@ import Risk from "@/components/Risk.jsx";
 import Contact from "./Contact.jsx";
 import Faq from "@/components/Faq.jsx";
 import Apply from "@/components/Apply.jsx";
-import Testimonials from "../components/Testimonials.jsx";
-import TestimonialsUser from "../components/TestimonialsUser.jsx";
+import Impact from "../components/Impact.jsx";
+import Revenue from "../components/Revenue.jsx";
 const Home = () => {
   return (
     <div>
@@ -24,7 +24,8 @@ const Home = () => {
       <Offer2 id="" />
       <Profit id="" />
       <Risk id="" />
-      <Testimonials />
+      <Impact />
+      {/* <Revenue /> */}
       {/* <TestimonialsUser /> */}
 
       <Faq id="faq" />
