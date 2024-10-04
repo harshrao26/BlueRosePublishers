@@ -8,6 +8,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { ModalProvider } from "./ModalContext.jsx"; // Modal Context Provider
 import ModalForm from "./components/ModalForm.jsx"; // The form modal component
 import Button from "./components/Button";
+import wh from '../public/wh.png'
 function App() {
   return (
     <>
@@ -17,7 +18,7 @@ function App() {
           <Navbar />
           <Routing />
           <Footer />
-          <BsWhatsapp className="absolue bottom-16 right-16 l text-green-600 fixed text-6xl" />
+          <img src={wh} className="absolue md:bottom-16 md:right-16 bottom-12 right-2 md:h-20 h-16   text-green-600 fixed text-6xl" />
         </ModalProvider>
       </div>
     </>

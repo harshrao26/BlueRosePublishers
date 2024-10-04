@@ -2,21 +2,21 @@ import React from "react";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import { IoMdBarcode } from "react-icons/io";
 import { IoIosLink } from "react-icons/io";
-
+import { Link } from "react-router-dom";
+import Button from "./Button";
 const Features = () => {
   return (
     <>
       <h1 className="text-5xl capitalize w-full font-semibold text-center py-4 ">
         Our Services​
-        
       </h1>
       <div className="flex flex-col md:flex-row w-full gap-8 md:px-16 py- px-4">
         {/* Left Section - Quote */}
         <div className="md:w-1/3 h-auto flex items-center">
           <h1 className="text-2xl md:text-4xl lg:text-5xl text-center md:text-left">
             <RiDoubleQuotesL className="text-red-500 inline-block text " />
-            Maximize Your Asset's Potential with {" "} 
-            <span className="font-semibold font">Coworking Consultancy</span> 
+            Maximize Your Asset's Potential with{" "}
+            <span className="font-semibold font">Coworking Consultancy</span>
             <RiDoubleQuotesR className="text-green-500 inline-block text " />
           </h1>
         </div>
@@ -31,9 +31,9 @@ const Features = () => {
             You focus on growth, while we manage the day-to-day operations,
             turning your asset into a sellable, thriving brand.
           </p>
-          <button className="mt-4 py-2 px-4 bg-zinc-800  -white rounded text-white hover:bg-zinc-700 transition duration-300">
-            Start Your Brand Today
-          </button>
+          <div className="py-2">
+            <Button name="Get Your Free Assessment" />
+          </div>
         </div>
 
         {/* Right Section - Partnership */}
@@ -45,9 +45,10 @@ const Features = () => {
             property, whether through partnership or rental. Let us handle the
             matchmaking while you enjoy the benefits.
           </p>
-          <button className="mt-4 py-2 px-4 bg-zinc-800  -white rounded text-white hover:bg-zinc-700 transition duration-300">
-            Get Your Free Assessment
-          </button>
+
+          <div className="py-2">
+            <Button name="Get Your Free Assessment" />
+          </div>
         </div>
       </div>
     </>

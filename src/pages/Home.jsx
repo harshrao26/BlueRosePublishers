@@ -25,7 +25,7 @@ const Home = () => {
       <Profit id="" />
       <Risk id="" />
       <Testimonials />
-      <TestimonialsUser />
+      {/* <TestimonialsUser /> */}
 
       <Faq id="faq" />
       <Contact id="contact" />

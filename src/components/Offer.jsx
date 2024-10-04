@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Offer = () => {
   return (
@@ -6,7 +7,6 @@ const Offer = () => {
       {/* Main Heading */}
       <h1 className="text-4xl sm:text-5xl capitalize font-semibold text-center  pb-8">
         What We Offer
-        
       </h1>
 
       <div className="flex flex-col md:flex-row items-center justify-between  md:space-y-0 md:space-x-12">
@@ -38,9 +38,9 @@ const Offer = () => {
           </p>
 
           {/* Button */}
-          <button className="px-6 py-3 bg-zinc-800 text-white font-medium rounded-md shadow-md hover:bg-zinc-900 transition-colors duration-300">
-            Ready to Start Your Coworking Journey?
-          </button>
+          <div className="">
+            <Button name="Ready to Start Your Coworking Journey?" />
+          </div>
         </div>
       </div>
     </div>

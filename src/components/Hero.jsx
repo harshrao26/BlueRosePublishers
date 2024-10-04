@@ -21,7 +21,7 @@ const Hero = () => {
           <span className="text-blue-500">profitable coworking businesses</span>
         </p>
         <div className="w-full flex items-center justify-center">
-          <Button />
+          <Button name="Let's Talk" />
         </div>
       </div>
     </div>

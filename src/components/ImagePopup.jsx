@@ -31,7 +31,7 @@ const ImagePopup = () => {
         {images.map((val, key) => {
           return (
             <div className="flex flex-col items-center justify-center">
-              <img src={val.src} alt="" className="rounded-full h-80 w-80" />
+              <img src={val.src} alt="" className="rounded-full md:h-80 md:w-80 h-40 w-40 " />
               <h1 className="text-2xl font-semibold">{val.title}</h1>
               <FaLinkedin className="text-blue-500 text-4xl" />
             </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import s1 from "../../public/s1.png";
+import Button from "./Button";
+
 const Offer = () => {
   return (
     <div className=" mx-auto px-8 md:px-16 py-8">
@@ -47,9 +49,11 @@ const Offer = () => {
           </ul>
 
           {/* Button */}
-          <button className="px-6 py-3 bg-zinc-800 text-white font-medium rounded-md shadow-md hover:bg-zinc-900 transition-colors duration-300">
-            Sumbit Your Interest
-          </button>
+          <div className="">
+            
+            <Button name="Sumbit Your Interest" />
+
+          </div>
         </div>
         {/* Image */}
         <div className="md:w-1/2">

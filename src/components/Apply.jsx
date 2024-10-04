@@ -24,12 +24,12 @@ const Apply = () => {
   return (
     <>
       <div
-        className={`flex px-16 bg-blue-500 items-center justify-between fixed bottom-0 w-full z-[100000] py-2 transition-all ease-in-out duration-500 transform ${
+        className={`flex md:px-16 px-8 bg-blue-500 items-center justify-between fixed bottom-0 w-full z-[100000] py-2 transition-all ease-in-out duration-500 transform ${
           showApply ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
         }`}
       >
         <h1 className="text-white text-xl">Want to work with us?</h1>
-        <Button />
+        <Button name="Let's Talk"/>
       </div>
     </>
   );
