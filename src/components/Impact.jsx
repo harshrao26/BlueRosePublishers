@@ -12,42 +12,42 @@ const Impact = () => {
       {/* Responsive Grid Layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full text-center">
         <div className="border-[1px] rounded-xl p-4">
-          <h1 className="text-2xl font-semibold">Sqft managed </h1>
+          <h1 className="text-2xl text-blue-500 font-semibold">Sqft managed </h1>
           <h1 className="flex w-full justify-center text-xl gap-1 font-semibold">
             <Counter desiredNumber={10} /> lac+
           </h1>
         </div>
 
         <div className="border-[1px] rounded-xl p-4">
-          <h1 className="text-2xl font-semibold ">Client managed</h1>
+          <h1 className="text-2xl text-blue-500 font-semibold ">Client managed</h1>
           <h1 className="flex w-full justify-center text-xl gap-1 font-semibold">
             <Counter desiredNumber={100} /> +
           </h1>
         </div>
 
         <div className="border-[1px] rounded-xl p-4">
-          <h1 className="text-2xl font-semibold">Number of desk managed</h1>
+          <h1 className="text-2xl text-blue-500 font-semibold">Number of desk managed</h1>
           <h1 className="flex w-full font-semibold text-xl justify-center">
             <CounterFast desiredNumber={2500} />+
           </h1>
         </div>
 
         <div className="border-[1px] rounded-xl p-4">
-          <h1 className="text-2xl font-semibold">Revenue generated</h1>
+          <h1 className="text-2xl text-blue-500 font-semibold">Revenue generated</h1>
           <h1 className="flex w-full justify-center  font-semibold text-xl gap-2">
             <Counter desiredNumber={10} /> million
           </h1>
         </div>
 
         <div className="border-[1px] rounded-xl p-4">
-          <h1 className="text-2xl font-semibold">Cities covered</h1>
+          <h1 className="text-2xl text-blue-500 font-semibold">Cities covered</h1>
           <h1 className="text-xl font-semibold">
             <Counter desiredNumber={10} />
           </h1>
         </div>
 
         <div className="border-[1px] rounded-xl p-4">
-          <h1 className="text-2xl font-semibold">Rental yield</h1>
+          <h1 className="text-2xl text-blue-500 font-semibold">Rental yield</h1>
           <h1 className="flex w-full text-xl font-semibold justify-center">
             <Counter desiredNumber={14} />% - <Counter desiredNumber={16} /> %
           </h1>

@@ -37,7 +37,7 @@ const Counter = ({ desiredNumber }) => {
       timer = setInterval(() => {
         setCount((prevCount) => {
           if (prevCount < desiredNumber) {
-            return prevCount + 1; // Increment the count
+            return prevCount + 50; // Increment the count
           } else {
             clearInterval(timer); // Stop the timer when desiredNumber is reached
             return prevCount;
