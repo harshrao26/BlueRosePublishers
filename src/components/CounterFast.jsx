@@ -43,7 +43,7 @@ const Counter = ({ desiredNumber }) => {
             return prevCount;
           }
         });
-      }, 25); // Adjust the interval for speed
+      }, 2); // Adjust the interval for speed
     }
 
     // Cleanup the interval on unmount or when the effect is rerun
