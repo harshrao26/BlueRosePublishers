@@ -1,77 +1,97 @@
 import React from "react";
-import s1 from "../../public/s1.png";
+import {
+  FaCheckCircle,
+  FaChartBar,
+  FaHandsHelping,
+  FaIndustry,
+  FaUsers,
+  FaBullseye,
+  FaHandshake,
+  FaTachometerAlt,
+} from "react-icons/fa";
 import Button from "./Button";
+
+// Array of service items with corresponding icon and text
+const services = [
+  {
+    icon: <FaBullseye className="text-blue-500 text-4xl mb-2" />,
+    title: "Brand Ideation",
+    description: "We help you create a coworking brand tailored to your market and property.",
+  },
+  {
+    icon: <FaChartBar className="text-blue-500 text-4xl mb-2" />,
+    title: "Feasibility Analysis",
+    description: "We evaluate local demand, competition, and ROI potential.",
+  },
+  {
+    icon: <FaTachometerAlt className="text-blue-500 text-4xl mb-2" />,
+    title: "Coworking Analysis",
+    description: "We optimize layouts for maximum space utilization and appeal.",
+  },
+  {
+    icon: <FaIndustry className="text-blue-500 text-4xl mb-2" />,
+    title: "Sellable Layouts",
+    description: "We design layouts that maximize space potential and attract clients.",
+  },
+  {
+    icon: <FaCheckCircle className="text-blue-500 text-4xl mb-2" />,
+    title: "Complete Brand Creation",
+    description: "From website development to marketing, we handle it all.",
+  },
+  {
+    icon: <FaHandsHelping className="text-blue-500 text-4xl mb-2" />,
+    title: "Hands-Free Management",
+    description: "We manage operations so you can focus on growth.",
+  },
+  {
+    icon: <FaUsers className="text-blue-500 text-4xl mb-2" />,
+    title: "Constant Occupancy",
+    description: "We ensure high occupancy rates with regular clients.",
+  },
+  {
+    icon: <FaHandshake className="text-blue-500 text-4xl mb-2" />,
+    title: "Coworking Matchmaking",
+    description: "We connect you with top coworking brands for partnerships.",
+  },
+];
 
 const Offer = () => {
   return (
-    <div className=" mx-auto px-4 md:px-16 py-8">
+    <div className="mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-8">
       {/* Main Heading */}
-      <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12">
+      <div className="flex flex-col items-center space-y-8">
         {/* Text Content */}
-        <div className="md:w-1/2 space-y-2">
-          <h1 className="text-2xl md:text-3xl font-bold text-blue-500 leading-snug">
+        <div className="text-center space-y-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-500 leading-snug">
             Leverage Our Expertise in Coworking Consultancy
           </h1>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            We are India’s only coworking consultancy that offers comprehensive
-            services to help you build or partner with a coworking brand. Here’s
-            what we do:
+          <p className="text-gray-600 text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+            We are India’s only coworking consultancy that offers comprehensive services to help you build or partner with a coworking brand. Here’s what we do:
           </p>
-          <ul>
-            <li className="py-1 text-lg">
-              <span className="font-semibold text-white bg-blue-500 px-2 text-l"> ⦿ Brand Ideation:</span> We help you create a coworking brand
-              tailored to your market and property.
-            </li>
-            <li className="py-1 text-lg">
-              <span className="font-semibold text-white bg-blue-500 px-2 text-l"> ⦿ Feasibility Analysis:</span> We evaluate local demand and competition for coworking spaces, while assessing costs and revenue potential to determine ROI.
-            </li>
-            <li className="py-1 text-lg">
-              <span className="font-semibold text-white bg-blue-500 px-2 text-l"> ⦿ Coworking  Analysis:</span> We optimise layouts for maximum space utilisation and appeal, while defining a unique value to stand out from competitors.
-            </li>
-            <li className="py-1 text-lg">
-              <span className="font-semibold text-white bg-blue-500 px-2 text-l"> ⦿ Sellable Layouts:</span> Using proprietary occupancy data,
-              we design layouts that maximize your space’s potential and attract
-              clients. 
-            </li>
-            <li className="py-1 text-lg">
-              <span className="font-semibold text-white bg-blue-500 px-2 text-l"> ⦿ Complete Brand Creation:</span> From website development to
-              logo design and marketing, we take care of all the branding
-              elements.
-            </li>
-            <li className="py-1 text-lg">
-              <span className="font-semibold text-white bg-blue-500 px-2 text-l"> ⦿ Hands-Free Management:</span> We can manage the day-to-day
-              operations, allowing you to focus on growth.
-            </li>
-            <li className="py-1 text-lg">
-              <span className="font-semibold text-white bg-blue-500 px-2 text-l"> ⦿ Constant Occupancy:</span> We create coworking spaces where
-              professionals and enterprises come regularly, ensuring high
-              occupancy rates.
-            </li>
-            <li className="py-1 text-lg">
-              <span className="font-semibold text-white bg-blue-500 px-2 text-l"> ⦿ Coworking Matchmaking:</span> If you don’t want to start
-              your own brand, we’ll connect you with top coworking brands for
-              partnerships or rentals.
-            </li>
-          </ul>
-
-          {/* Button */}
-          <div className="">
-            
-            <Button name="Sumbit Your Interest" />
-
-          </div>
         </div>
-        {/* Image */}
-        <div className="md:w-1/2">
-          <img
-            src='https://img.freepik.com/premium-vector/home-office-interior-workplace-work-night-close-office_39422-219.jpg'
-            alt="Coworking Spaces"
-            className="w-full h-[75vh] rounded-lg shadow-lg object-cover"
-          />
+
+        {/* List of Services */}
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 justify-center w-full">
+          {services.map((service, index) => (
+            <li
+              key={index}
+              className="flex items-center text-lg w-full flex-col border-2 border-blue-500 rounded-lg p-4 sm:p-6 bg-white hover:bg-blue-100 transition-all"
+            >
+              {service.icon}
+              <span className="font-semibold text-zinc-900 text-center mt-2">{service.title}:</span>
+              <p className="text-gray-700 text-center mt-2 text-sm sm:text-base">{service.description}</p>
+            </li>
+          ))}
+        </ul>
+
+        {/* Button */}
+        <div className="mt-6">
+          <Button name="Submit Your Interest" />
         </div>
       </div>
     </div>
   );
 };
+
 
 export default Offer;

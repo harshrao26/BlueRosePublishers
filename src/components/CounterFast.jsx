@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const Counter = ({ desiredNumber }) => {
-  const [count, setCount] = useState(1);
+const Counter = () => {
+  const desiredNumber = 2500;
+  const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false); // State to track visibility
   const counterRef = useRef(null); // Ref for the counter element
 
@@ -36,14 +37,16 @@ const Counter = ({ desiredNumber }) => {
     if (isVisible) {
       timer = setInterval(() => {
         setCount((prevCount) => {
-          if (prevCount <= desiredNumber) {
-            return prevCount + 10; // Increment the count
+          // Ensure the count stops at exactly 2500
+          if (prevCount < desiredNumber) {
+            const increment = Math.min(100, desiredNumber - prevCount); // Increment, but stop exactly at 2500
+            return prevCount + increment;
           } else {
             clearInterval(timer); // Stop the timer when desiredNumber is reached
             return prevCount;
           }
         });
-      }, 2); // Adjust the interval for speed
+      }, 200); // Adjust the interval for speed
     }
 
     // Cleanup the interval on unmount or when the effect is rerun

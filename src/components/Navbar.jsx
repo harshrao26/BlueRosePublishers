@@ -51,19 +51,19 @@ const Navbar = () => {
         <div className={`fixed top-0 right-0 bg-white shadow-md w-64 h-screen transition-transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <ul className="flex flex-col text-zinc-800 mt-20 space-y-6 text-center">
             <li>
-              <Link to="/" className="text-lg hover:text-gray-400" onClick={toggleMenu}>Home</Link>
+              <Link to="/" className="text-lg hover:text-blue-400" onClick={toggleMenu}>Home</Link>
             </li>
             {/* <li>
-              <Link to="/services" className="text-lg hover:text-gray-400" onClick={toggleMenu}>Our Service</Link>
+              <Link to="/services" className="text-lg hover:text-blue-400" onClick={toggleMenu}>Our Service</Link>
             </li> */}
             {/* <li>
-              <Link to="/about" className="text-lg hover:text-gray-400" onClick={toggleMenu}>About Us</Link>
+              <Link to="/about" className="text-lg hover:text-blue-400" onClick={toggleMenu}>About Us</Link>
             </li> */}
             <li>
-              <Link to="/" className="text-lg hover:text-gray-400" onClick={toggleMenu}>Blogs</Link>
+              <Link to="/blogs" className="text-lg hover:text-blue-400" onClick={toggleMenu}>Blogs</Link>
             </li>
             <li>
-              <Link to="/careers" className="text-lg hover:text-gray-400" onClick={toggleMenu}>Careers</Link>
+              <Link to="/careers" className="text-lg hover:text-blue-400" onClick={toggleMenu}>Careers</Link>
             </li>
           </ul>
         </div>
