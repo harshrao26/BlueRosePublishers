@@ -28,7 +28,7 @@ const Impact = () => {
         <div className="border-[1px] rounded-xl p-4">
           <h1 className="text-2xl text-blue-500 font-semibold">Number of desk managed</h1>
           <h1 className="flex w-full font-semibold text-xl justify-center">
-            <CounterFast desiredNumber={2500} />+
+            <CounterFast desiredNumber={2499} />+
           </h1>
         </div>
 
