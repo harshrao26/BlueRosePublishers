@@ -36,6 +36,11 @@ const FAQ = () => {
       answer:
         "The timeline varies depending on the scale of the project, but typically we can help you start seeing revenue within 6 months.",
     },
+    {
+      question: "What is the future of flexible spaces?",
+      answer:
+        "The future of flexible spaces is promising, driven by evolving work trends and the demand for agility. Innovation in design, technology integration, and amenities will enhance productivity and connectivity. Sustainability practices and wellness initiatives will gain importance. With these advancements, flexible spaces will continue to cater to the changing needs of professionals and businesses in a dynamic work landscape.",
+    },
   ];
 
   return (
@@ -54,7 +59,7 @@ const FAQ = () => {
               className="flex justify-between  items-center px-6 py-4 cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
-              <h2 className="text-lg md:text-xl font-semibold">{faq.question}</h2>
+              <h2 className="text-md md:text-lg font-semibold">{faq.question}</h2>
               <span className="text-xl md:text-2xl">
                 {activeIndex === index ? <FiChevronUp /> : <FiChevronDown />}
               </span>

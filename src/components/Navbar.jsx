@@ -27,13 +27,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed p-4 z-40 w-full top-0  py-5 transition-colors ${isScrolled ? 'bg-white' : 'bg-red-0'}`}>
+    <nav className={`fixed p-4 z-40 w-full top-0  py-5 transition-colors ${isScrolled ? 'bg-white ' : 'bg-white '}`}>
       <div className="container mx-auto flex justify-between items-center">
         
         {/* Logo in the center */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
           <Link to="/" className="text-white text-2xl font-bold">
-            <img src="https://propques.com/wp-content/uploads/2023/12/Untitled_design__2_-removebg-preview-e1702983011868-60x61.png" alt="Logo" />
+            <img src="https://propques.com/wp-content/uploads/2023/12/Untitled_design__2_-removebg-preview-e1702983011868-60x61.png" alt="Logo" className=" "/>
           </Link>
         </div>
 

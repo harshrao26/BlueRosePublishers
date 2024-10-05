@@ -25,7 +25,7 @@ const ImagePopup = () => {
 
   return (
     <>
-      <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center mt-4 py-8">
+      <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center  py-8">
         Meet Our Founders
       </h1>
       <div className=" flex justify-evenly pb-8">

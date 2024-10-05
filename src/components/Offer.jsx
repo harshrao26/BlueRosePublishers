@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-
+import interier from '../../public/interier.avif'
 const Offer = () => {
   return (
     <div className=" mx-auto px-4 md:px-16 p8">
@@ -9,11 +9,11 @@ const Offer = () => {
         What We Offer
       </h1>
 
-      <div className="flex flex-col md:flex-row items-center justify-between  md:space-y-0 md:space-x-12">
+      <div className="flex flex-col md:flex-row  justify-between  md:space-y-0 md:space-x-12">
         {/* Image */}
         <div className="md:w-1/2">
           <img
-            src="https://img.freepik.com/free-vector/office-interior-workplace_24908-56588.jpg"
+            src={interier}
             alt="Coworking Spaces"
             className="w-full h-[75vh] rounded-lg shadow-lg object-cover"
           />
@@ -21,10 +21,10 @@ const Offer = () => {
 
         {/* Text Content */}
         <div className="md:w-1/2 space-y-6">
-          <h1 className="text-2xl md:text-3xl font-bold text-blue-500 leading-snug">
+          <h1 className="text-2xl md:text-3xl font-semibold text-blue-500 ">
             Creating Sustainable Coworking Brands with Asset Owners at the Core
           </h1>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-800 text-lg  text-justify">
             Two friends, while working for a coworking startup, realized during
             the COVID-19 pandemic that the key to a sustainable coworking
             business lies with asset owners. By generating additional revenue

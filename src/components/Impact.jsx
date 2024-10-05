@@ -4,7 +4,7 @@ import CounterFast  from "./CounterFast";
 
 const Impact = () => {
   return (
-    <div className="px-4 md:px-16 py-8">
+    <div className="px-4 md:px-16 py-">
       <h1 className="md:text-5xl text-3xl capitalize w-full font-semibold text-center py-8">
         Impact That We Have Created
       </h1>
