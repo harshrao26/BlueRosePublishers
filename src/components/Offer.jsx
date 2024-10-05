@@ -4,9 +4,9 @@ import interier from '../../public/interier.avif';
 
 const Offer = () => {
   return (
-    <div className="mx-auto px-4 md:px-16 py-8">
+    <div className="mx-auto px-4 md:px-16 md:py-8 py-">
       {/* Main Heading */}
-      <h1 className="md:text-5xl text-3xl capitalize font-semibold text-center pb-8">
+      <h1 className="md:text-5xl text-3xl capitalize font-semibold text-center pb-4 md:pb-0">
         What We Offer
       </h1>
 

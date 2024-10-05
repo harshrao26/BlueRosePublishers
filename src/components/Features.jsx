@@ -9,10 +9,10 @@ import hnad from "../../public/hnad.webp";
 const Features = () => {
   return (
     <>
-      <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center md:py-8 py-4  ">
+      <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center md:py-8 pt-4  ">
         Our Services​
       </h1>
-      <div className="flex flex-col md:flex-row w-full gap-8 md:px-16 py- px-4">
+      <div className="flex flex-col md:flex-row w-full gap-8 md:px-16 px-4">
         {/* Left Section - Quote */}
         <div className="md:w-1/3 h-auto flex items-center">
           <h1 className="text-xl md:text-4xl lg:text-5xl text-center md:text-left">

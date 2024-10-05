@@ -5,7 +5,7 @@ const Risk = () => {
   return (
     <div className="flex flex-col md:flex-row gap-8 md:px-16 px-4 py-8">
       {/* Left Section - Image */}
-      <div className="flex-1 mb-6 md:mb-0">
+      <div className="flex-1  md:mb-0">
         <img
           src="https://cdn2.hubspot.net/hub/7379058/hubfs/20201208_Blog%20Featured%20Image.gif?width=750&name=20201208_Blog%20Featured%20Image.gif"
           alt="Operational Efficiency"
