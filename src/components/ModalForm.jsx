@@ -214,7 +214,7 @@ const ModalForm = () => {
           {/* Google reCAPTCHA */}
           <div className="mb-4 flex justify-center">
             <ReCAPTCHA
-              sitekey="YOUR_RECAPTCHA_SITE_KEY" // Replace with your own site key
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" // Replace with your own site key
               onChange={onCaptchaChange}
             />
           </div>
