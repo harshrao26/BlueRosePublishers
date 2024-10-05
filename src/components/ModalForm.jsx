@@ -53,16 +53,7 @@ const ModalForm = () => {
 
     console.log("Form Data Sent: ", formData);
 
-    // Example API call to send the form data (using your backend or email service):
-    // fetch("/send-email", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(emailData),
-    // }).then(() => {
-    //   alert("Form submitted successfully!");
-    // });
+   
 
     alert("Form submitted successfully!");
   };
@@ -214,7 +205,7 @@ const ModalForm = () => {
           {/* Google reCAPTCHA */}
           <div className="mb-4 flex justify-center">
             <ReCAPTCHA
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" // Replace with your own site key
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" 
               onChange={onCaptchaChange}
             />
           </div>
