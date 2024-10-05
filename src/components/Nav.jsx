@@ -26,9 +26,9 @@ const Navbar = () => {
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
-                <FiX className="block h-6 w-6" aria-hidden="true" />
+                <FiX className="block h-6 w-6 " aria-hidden="true" />
               ) : (
-                <FiMenu className="block h-6 w-6" aria-hidden="true" />
+                <FiMenu className="block h-6 w-6 " aria-hidden="true" />
               )}
             </button>
           </div>

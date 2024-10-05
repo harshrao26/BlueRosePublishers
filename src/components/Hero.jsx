@@ -35,12 +35,12 @@ const Hero = () => {
       <img
         src={overlays}
         alt=""
-        className="absolute z-10 h-screen mr-[52vw] -mt-20   "
+        className="absolute z-10 h-screen mr-[52vw] -mt-20 opacity-50   "
       />
       <img
         src={overlays2}
         alt=""
-        className="absolute z-10 h-screen ml-[52vw] -mt-20   "
+        className="absolute z-10 h-screen ml-[52vw] -mt-20 opacity-50   "
       />
     </div>
   );

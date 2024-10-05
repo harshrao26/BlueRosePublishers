@@ -10,10 +10,10 @@ const Features = () => {
       <h1 className="md:text-5xl text-3xl  capitalize w-full font-semibold text-center py-8 ">
         Our Services​
       </h1>
-      <div className="flex flex-col md:flex-row w-full gap-8 md:px-16 py- px-4">
+      <div className="md:px-32 px-4">
         {/* Left Section - Quote */}
-        <div className="md:w-1/3 h-auto flex items-center">
-          <h1 className="text-xl md:text-4xl lg:text-5xl text-center md:text-left">
+        <div className=" ">
+          <h1 className="w-full text-center text-2xl">
             <RiDoubleQuotesL className="text-blue-500 inline-block text " />
             Maximize Your Asset's Potential with{" "}
             <span className="font-semibold font">Coworking Consultancy</span>
@@ -21,34 +21,40 @@ const Features = () => {
           </h1>
         </div>
 
-        {/* Middle Section - Branding */}
-        <div className="md:w-1/3 w-full  rounded md:mt-10 hover:scale-105 transition-all ease-in-out bg-zinc-100  flex flex-col items-center justify-around p-8 shadow-xl text-center">
-          <IoMdBarcode className="text-black mb-4" size={60} />
-          <p className="text-black md:text-base text-sm leading-5 text-justify">
-            Looking to build your own commercial asset brand with seamless
-            management? We’ll handle everything — from creating your brand name
-            and website to designing marketing strategies and implementing SOPs.
-            You focus on growth, while we manage the day-to-day operations,
+        <div className="w-full flex  bg-gray-100 rounded py-4 my-4">
+          <IoMdBarcode className="text-black mb-4 w-1/2 " size={60} />
+          <p className="w-1/2 flex flex-col gap-1 px-4">
+            <span className=" text-2xl font-semibold text-blue-500 ">
+              Looking to build your own commercial asset brand with seamless
+              management?
+            </span>
+            <br />
+            ⦿ 
+            We’ll handle everything — from creating your brand name and website
+            to designing marketing strategies and implementing SOPs.
+            <br />
+            ⦿ You focus on growth, while we manage the day-to-day operations,
             turning your asset into a sellable, thriving brand.
+            <div className="py-2">
+              <Button name="Know Your Property Potential" />
+            </div>
           </p>
-          <div className="py-2">
-            <Button name="Get Your Free Assessment" />
-          </div>
         </div>
 
-        {/* Right Section - Partnership */}
-        <div className="md:w-1/3 w-full rounded mb-10 md:mb-10 hover:scale-105 transition-all ease-in-out  shadow-xl  bg-zinc-100 flex flex-col items-center justify-around p-8 text-center">
-          <IoIosLink className="text-black mb-4" size={60} />
-          <p className="text-black md:text-base text-sm  leading-5 text-justify">
-            Looking to partner with a coworking brand? We’ll take a mandate and
-            use our industry connections to find the perfect brand for your
-            property, whether through partnership or rental. Let us handle the
-            matchmaking while you enjoy the benefits.
+        <div className=" w-full flex  bg-gray-100 rounded py-4 my-4">
+          <IoIosLink className="text-black mb-4 w-1/2" size={60} />
+          <p className="w-1/2 flex flex-col gap-1 px-4">
+            <span className="text-2xl font-semibold text-blue-500 ">Looking to partner with a coworking brand?</span>
+            <br />
+            ⦿ We’ll take a mandate and use our industry connections to find the
+            perfect brand for your property, whether through partnership or
+            rental.
+            <br />
+            ⦿ Let us handle the matchmaking while you enjoy the benefits.
+            <div className="py-2">
+              <Button name="Get Your Free Assessment" />
+            </div>
           </p>
-
-          <div className="py-2">
-            <Button name="Get Your Free Assessment" />
-          </div>
         </div>
       </div>
     </>

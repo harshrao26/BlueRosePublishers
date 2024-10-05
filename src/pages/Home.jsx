@@ -17,8 +17,8 @@ const Home = () => {
     <div>
       <Hero id="home" />
       <Apply />
-      <Marqueee id="case" />
       <Features id="service" />
+      <Marqueee id="case" />
       <ImagePopup id="about" />
       <Offer id="" />
       <Offer2 id="" />

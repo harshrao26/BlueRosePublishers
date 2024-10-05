@@ -12,7 +12,7 @@ const Profit = () => {
       }}
     >
       {/* Text Section */}
-      <h1 className="text-3xl md:text-4xl text-center font-semibold leading-snug pt-8 pb-4 text-gray-900">
+      <h1 className="text-3xl md:text-4xl text-center font-semibold leading-snug pt-8 pb-4 text-gray-100">
         Maximize Your Asset’s Profit Potential in Just{" "}
         <span className="inline-block text-semibold text-white px-4 py-1 bg-blue-500">
           6 Months
