@@ -40,7 +40,7 @@ const services = [
   },
   {
     icon: <FaCheckCircle className="text-blue-500 text-4xl mb-2" />,
-    title: "Complete Brand Creation",
+    title: "Marketing management",
     description: "From website development to marketing, we handle it all.",
   },
   {
@@ -53,11 +53,11 @@ const services = [
     title: "Sales Management",
     description: "We ensure high occupancy rates with regular clients.",
   },
-  {
-    icon: <FaHandshake className="text-blue-500 text-4xl mb-2" />,
-    title: "Marketing management",
-    description: "We connect you with top coworking brands for partnerships.",
-  },
+  // {
+  //   icon: <FaHandshake className="text-blue-500 text-4xl mb-2" />,
+  //   title: "Marketing management",
+  //   description: "We connect you with top coworking brands for partnerships.",
+  // },
   {
     icon: <FaFileInvoiceDollar className="text-blue-500 text-4xl mb-2" />,
     title: "Financial Modelling",

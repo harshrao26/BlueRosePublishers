@@ -1,30 +1,31 @@
 import React from "react";
 import Button from "./Button";
-import interier from '../../public/interier.avif'
+import interier from '../../public/interier.avif';
+
 const Offer = () => {
   return (
-    <div className=" mx-auto px-4 md:px-16 p8">
+    <div className="mx-auto px-4 md:px-16 py-8">
       {/* Main Heading */}
-      <h1 className="md:text-5xl text-3xl  capitalize font-semibold text-center  pb-8">
+      <h1 className="md:text-5xl text-3xl capitalize font-semibold text-center pb-8">
         What We Offer
       </h1>
 
-      <div className="flex flex-col md:flex-row  justify-between  md:space-y-0 md:space-x-12">
+      <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 md:space-x-12">
         {/* Image */}
         <div className="md:w-1/2">
           <img
             src={interier}
             alt="Coworking Spaces"
-            className="w-full h-[75vh] rounded-lg shadow-lg object-cover"
+            className="w-full h-64 md:h-[75vh] rounded-lg shadow-lg object-cover"
           />
         </div>
 
         {/* Text Content */}
         <div className="md:w-1/2 space-y-6">
-          <h1 className="text-2xl md:text-3xl font-semibold text-blue-500 ">
+          <h1 className="text-2xl md:text-3xl font-semibold text-blue-500">
             Creating Sustainable Coworking Brands with Asset Owners at the Core
           </h1>
-          <p className="text-gray-800 text-lg  text-justify">
+          <p className="text-gray-800 text-base md:text-lg text-justify">
             Two friends, while working for a coworking startup, realized during
             the COVID-19 pandemic that the key to a sustainable coworking
             business lies with asset owners. By generating additional revenue
