@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoClose } from "react-icons/io5"; // Import close icon
 import { useModal } from "../ModalContext"; // Import modal context
-import ReCAPTCHA from "react-google-recaptcha"; // Import reCAPTCHA
+import HCaptcha from '@hcaptcha/react-hcaptcha'; // Import hCaptcha
 
 const ModalForm = () => {
   const { isFormOpen, toggleForm } = useModal();
@@ -29,8 +29,8 @@ const ModalForm = () => {
   };
 
   // Handle captcha verification
-  const onCaptchaChange = (value) => {
-    if (value) {
+  const onCaptchaChange = (token) => {
+    if (token) {
       setIsCaptchaVerified(true);
     }
   };
@@ -52,8 +52,6 @@ const ModalForm = () => {
     };
 
     console.log("Form Data Sent: ", formData);
-
-   
 
     alert("Form submitted successfully!");
   };
@@ -202,11 +200,11 @@ const ModalForm = () => {
             </select>
           </div>
 
-          {/* Google reCAPTCHA */}
+          {/* HCaptcha */}
           <div className="mb-4 flex justify-center">
-            <ReCAPTCHA
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" 
-              onChange={onCaptchaChange}
+            <HCaptcha
+              sitekey="c424c346-6194-4e12-b53a-51944a8a5168" 
+              onVerify={onCaptchaChange}
             />
           </div>
 
