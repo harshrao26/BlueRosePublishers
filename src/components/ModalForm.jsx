@@ -38,23 +38,33 @@ const ModalForm = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     if (!isCaptchaVerified) {
       alert("Please complete the CAPTCHA verification.");
       return;
     }
-
-    // Prepare the email data (In practice, you'll need an email sending API or backend logic)
-    const emailData = {
-      to: "buzz@propques.com",
-      subject: "New Property Submission",
-      body: JSON.stringify(formData, null, 2),
-    };
-
-    console.log("Form Data Sent: ", formData);
-
-    alert("Form submitted successfully!");
+  
+    // Send form to Formspree
+    fetch("https://formspree.io/f/xjkvbrzq", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Form submitted successfully!");
+        } else {
+          alert("Failed to send email.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Error sending email.");
+      });
   };
+  
 
   if (!isFormOpen) return null;
 
