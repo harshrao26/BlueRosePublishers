@@ -19,10 +19,10 @@ const Hero = () => {
         </h1>
         <p className="text-sm md:text-md lg:text-lg max-w-3xl text-center  py-4 capitalize text-gray-950">
           Helping property owners, entrepreneurs, and real estate professionals
-          transform and matchmake spaces into{" "}
-          <span className="text-blue-500">profitable coworking businesses</span>
+          transform and matchmaking with{" "}
+          <span className="text-blue-500">coworking </span>
         </p>
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex items-center justify-center z-[100000]">
           <Button name="Let's Talk" />
         </div>
       </div>
@@ -30,7 +30,7 @@ const Hero = () => {
       <img
         src="https://www.freepnglogos.com/uploads/paper-plane-png/paper-plane-making-hammer-paper-airplane-that-flies-far-emerging-11.png"
         alt=""
-        className="absolute z-10 md:w-full md:p-96 w-60 md:ml-[45vw] ml-[0vw] z-20 "
+        className="absolute  md:w-full md:p-96 w-60 md:ml-[45vw] ml-[0vw]  "
       />
       {/* <img
         src={overlays}
