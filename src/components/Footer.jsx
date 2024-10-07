@@ -24,8 +24,8 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-2">Menu</h3>
             <ul>
               <li><a href="#" className="hover:underline">Blog</a></li>
-              <li><a href="#" className="hover:underline">Careers</a></li>
-              <li><a href="#" className="hover:underline">Contact Us</a></li>
+              <li><a href="https://propques.zohorecruit.in/jobs/Careers" className="hover:underline">Careers</a></li>
+              <li><a href="/contact" className="hover:underline">Contact Us</a></li>
             </ul>
           </div>
 

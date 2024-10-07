@@ -65,7 +65,7 @@ const ModalForm = () => {
     };
 
     // Send form data using EmailJS
-    emailjs.send('service_1wnlrfn', 'template_uqruio4', emailParams, 'GoNyNp-kygOi5oysW')
+    emailjs.send('service_vcnub3o', 'template_wkjd0zu', emailParams, 'KM6kJPymVVzg7Aim1')
       .then((response) => {
         alert('Form submitted successfully!');
         setFormData({
