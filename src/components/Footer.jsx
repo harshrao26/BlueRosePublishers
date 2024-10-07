@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-white text-[#2362AB] py-10 px-6 md:px-16 ">
@@ -23,9 +23,9 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="font-semibold text-lg mb-2">Menu</h3>
             <ul>
-              <li><a href="#" className="hover:underline">Blog</a></li>
+              <li><Link to="/" className="hover:underline">Blog</Link></li>
               <li><a href="https://propques.zohorecruit.in/jobs/Careers" className="hover:underline">Careers</a></li>
-              <li><a href="/contact" className="hover:underline">Contact Us</a></li>
+              <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
             </ul>
           </div>
 

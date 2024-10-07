@@ -17,11 +17,11 @@ const Hero = () => {
           Monetizing Commercial Assets with{" "}
           <span className="text-blue-500">Coworking Spaces</span>
         </h1>
-        <p className="text-sm md:text-md lg:text-lg max-w-3xl text-center  py-4 capitalize text-gray-950">
+        <h2 className="text-sm md:text-md lg:text-lg max-w-3xl text-center  py-4 capitalize text-gray-950">
           Helping property owners, entrepreneurs, and real estate professionals
           transform and matchmaking with{" "}
           <span className="text-blue-500">coworking </span>
-        </p>
+        </h2>
         <div className="w-full flex items-center justify-center z-[100000]">
           <Button name="Let's Talk" />
         </div>
