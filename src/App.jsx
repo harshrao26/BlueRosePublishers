@@ -11,7 +11,6 @@ import wh from '../public/wh.png';
 
 function App() {
   return (
-    <Router>
       <ModalProvider>
         <ModalForm /> {/* Modal form that is globally accessible */}
         
@@ -52,7 +51,6 @@ function App() {
           {/* <img src={wh} className="absolute md:bottom-16 md:right-16 bottom-12 right-2 md:h-20 h-16 text-green-600 fixed text-6xl" alt="WhatsApp" /> */}
         </div>
       </ModalProvider>
-    </Router>
   );
 }
 

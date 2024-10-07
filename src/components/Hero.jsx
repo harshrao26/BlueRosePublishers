@@ -6,10 +6,7 @@ const Hero = () => {
   return (
     <div
       className="w-full relative bg-[#ffffff]  py-20 md:py-40 flex flex-col items-center justify-center px-4 md:px-0 bg-cover overflow-hidden bg-center"
-      style={{
-        backgroundImage:
-          "url('htt://images.unsplash.com/photo-1520032525096-7bd04a94b5a4?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-      }}
+      
     >
       <div className="backdrop-blur- py-8 px-4 rounded-xl z-20 flex flex-col items-center justify-center ">
         <h1 className="text-3xl md:text-5xl lg:text-6xl text-gray-950 text-center max-w-4xl leading-tight">
