@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="font-semibold text-lg mb-2">Quick Links</h3>
             <ul>
-              <li><a href="#" className="hover:underline">Looking for Offices</a></li>
+              <li><a href="https://findurspace.tech/" className="hover:underline">Looking for Offices</a></li>
              
             </ul>
           </div>
